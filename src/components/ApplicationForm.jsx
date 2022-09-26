@@ -5,6 +5,7 @@ import PersonalInfo from './loanAppPages/PersonalInfo'
 import EmploymentInfo from './loanAppPages/EmploymentInfo'
 import AppResultsModal from './loanAppPages/AppResultsModal';
 import {makeStyles} from '@material-ui/core/styles';
+import '../Main.css'
 
 const useStyles = makeStyles((theme) => ({
     mainContainer: {
@@ -28,17 +29,11 @@ const useStyles = makeStyles((theme) => ({
     heroImg:{
         width:'100%', height:'100%', objectFit:'cover', objectPosition:'0px 25%',
     },
-    heroTextContainer:{
-        width:'100%', height:'300px', display:'flex', flexFlow:'column', justifyContent:'center'
-    },
     heroTitle:{
         margin:0, fontSize:50, fontWeight:'bold', color:'#ffffff', width:'100%', textAlign:'center',  textShadow: '2px 2px 8px #000000',
     },
     heroSubTitle:{
         margin:0, color:'#ffffff', width:'100%', textAlign:'center',  textShadow: '2px 2px 8px #000000',
-    },
-    formContainer: {
-        padding:40, backgroundColor:'white', height:'calc(100vh - 500px)', minHeight:650, boxShadow:'5px 5px 10px rgba(0, 0, 0, 0.2)', borderRadius:8,
     },
     formTitle: {
       margin: theme.spacing(0),
@@ -72,13 +67,13 @@ function ApplicationForm() {
 
             <Grid container item xs={10} md={8} style={{position:'absolute', display:'flex', justifyContent:'center', height:'100%', left: 0, right: 0,  marginLeft: 'auto', marginRight: 'auto' }}>
                 <Grid container item xs={12}>
-                    <div className={classes.heroTextContainer}>
+                    <div className='hero-text-container'>
                         <Typography variant='h1' className={classes.heroTitle}>Assisting you with your fiancial needs.</Typography>
                         <Typography variant='h4' className={classes.heroSubTitle}>Personal loans up to $10,000</Typography>
                     </div>
                 </Grid>
 
-                <Grid contianer item sm={12} md={10} lg={8} className={classes.formContainer}>
+                <Grid contianer item sm={12} md={10} lg={8} className='form-container'>
                     <Typography variant='h2' style={{margin:0, fontSize:40, fontWeight:'bold', width:'100%'}}>Apply now.</Typography>
                     <Typography variant='h5' style={{margin:0, width:'100%'}}>This won't affect your credit.</Typography>
                     <Typography style={{fontSize:'14px', marginTop:20}}>page {page} of 2</Typography>

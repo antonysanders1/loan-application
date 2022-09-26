@@ -76,6 +76,8 @@ function PersonalInfo() {
                 }else{
                     setValidDOB(false)
                 }
+            }else{
+                setValidDOB(true)
             }
         }else if(parseInt(todaysDateArray[2]) - parseInt(dobArray[2]) < 18){
             setValidDOB(false)
