@@ -19,7 +19,7 @@
 }
 
 .hero{
-  min-height:calc(100vh - 40px);
+  min-height:1100px;
   display:flex;
   flex-direction:row;
   background-color:white;

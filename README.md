@@ -9,6 +9,16 @@ Based on user input, the result will yeild in either a Small/Large Loan (hard co
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Install Packages
+
+To install all of the Node Modules, run:
+
+### `npm install`
+
+If you happen to encounter an error, you can try command:
+
+### `npm install --legacy-peer-deps`
+
 ## Available Scripts
 
 In the project directory, you can either run:
